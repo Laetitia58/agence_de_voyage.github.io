@@ -226,7 +226,7 @@ div.contener>button:hover {
       /*partie Leticia*/
 
 
-#arriere_plan {
+body {
   background-image: url(/images-agence-de-voyage/Mongolie1.jpg);
   background-repeat: no-repeat;
   background-size: cover;

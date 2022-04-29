@@ -383,7 +383,10 @@ section3 input
     border: 4px solid outset;
     box-shadow: 6px 7px 7px;
 }
-
+#valides4 span:nth-child(2)
+{
+    display: none;
+}
 #payer :hover
 {
     background-color: aquamarine;
@@ -396,6 +399,21 @@ section3 input
      font-size: 17px;
      font-style: oblique;
      font-weight: bold;
+}
+#payer #valides4:focus span:nth-child(1)
+{
+    display: none;
+}
+#payer #valides4:focus span:nth-child(2)
+{
+    font-size: 20px;
+    display: inline;
+}
+#payer #valides4:focus
+{
+    margin-left: 45%;
+    height:100px;
+    width:200px;
 }
 
          /* ici commence la section6*/

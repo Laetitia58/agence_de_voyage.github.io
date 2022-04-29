@@ -1,0 +1,120 @@
+@font-face {
+    font-family:'IngridDarling-Regular';
+    src:url("/projet-ailleur/Ingrid_Darling/IngridDarling-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family:'BebasNeue-Regular';
+    src:url("/projet-ailleur/police/BebasNeue-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family:'Alfaslab';
+    src:url("/projet-ailleur/police/AlfaSlabOne-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family:'ArchitectsDaughter-Regular';
+    src: url("/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
+}
+@font-face {
+    font-family:'Dancing-script';
+    src: url("/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family:'grap-nuts';
+    src: url("/fonts/Grape_Nuts/GrapeNuts-Regular.ttf");
+}
+@font-face {
+    font-family:'jost1';
+    src: url("/fonts/Jost/Jost-Italic-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family:'jost2';
+    src: url("/fonts/Jost/Jost-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family:'yantramanav1';
+    src: url("/fonts/Yantramanav/Yantramanav-Thin.ttf");
+}
+@font-face {
+    font-family:'yantramanav2';
+    src: url("/fonts/Yantramanav/Yantramanav-Regular.ttf");
+}
+@font-face {
+    font-family:'yantramanav3';
+    src: url("/fonts/Yantramanav/Yantramanav-Medium.ttf");
+}
+@font-face {
+    font-family:'yantramanav4';
+    src: url("/fonts/Yantramanav/Yantramanav-Light.ttf");
+}
+@font-face {
+    font-family:'yantramanav5';
+    src: url("/fonts/Yantramanav/Yantramanav-Black.ttf");
+}
+@font-face {
+    font-family: "open-sans-bold-w";
+    src: url(../fonts/OpenSans-Bold.woff) format("woff"); 
+}
+@font-face {
+    font-family: "open-sans-bold-w2";
+    src: url(../fonts/OpenSans-Bold.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "open-sans-regular-w";
+    src: url(../fonts/OpenSans-Regular.woff) format("woff"); 
+}
+@font-face {
+    font-family: "open-sans-regular-w2";
+    src: url(../fonts/OpenSans-Regular.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "poppins-bold-w";
+    src: url(../fonts/poppins-bold.woff) format("woff"); 
+}
+@font-face {
+    font-family: "poppins-bold-w2";
+    src: url(../fonts/poppins-bold.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "poppins-italic-w";
+    src: url(../fonts/poppins-italic.woff) format("woff"); 
+}
+@font-face {
+    font-family: "poppins-italic-w2";
+    src: url(../fonts/poppins-italic.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "poppins-regular-w";
+    src: url(/fonts/OpenSans-Regular.woff) format("woff"); 
+}
+@font-face {
+    font-family: "poppins-regular-w";
+    src: url(../fonts/poppins-regular.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov-bold-w";
+    src: url(../fonts/volkhov-bold.woff) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov-bold-w";
+    src: url(../fonts/volkhov-bold.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov-italic-w";
+    src: url(../fonts/volkhov-italic.woff) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov-italic-w";
+    src: url(../fonts/volkhov-italic.woff2) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov-regular-w";
+    src: url(../fonts/volkhov-regular.woff) format("woff"); 
+}
+@font-face {
+    font-family: "volkhov-regular-w";
+    src: url(../fonts/volkhov-regular.woff2) format("woff"); 
+}
+@font-face{
+   font-family:"qwigley_regular";
+   src: url("/fonts/Qwigley-Regular.ttf") format('truetype'); 
+}

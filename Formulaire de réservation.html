@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire agence css.css">
+    <title>Formulaire de réservation</title>
+</head>
+
+
+
+<body>
+   
+<header>
+         <h1>Formulaire de réservation</h1>
+</header>                   
+
+
+
+<form>
+
+                        <!--ici commence la section1-->
+
+<section1>
+       
+            <!--date format dd-mm-yyyy utiliser DOMString-->
+        <h3 id="votrechoix">Votre choix</h3> 
+        <br> 
+            <p id="destinationscroll">
+                Votre destination:
+            </p> 
+                           
+            <p>
+                <div id="destination">
+                    <form>
+                          <select class="choix_destination" name="choix_destinations" size="4">
+                               <option> Mongolie : nuits dans des yourtes &#x2605; </option>
+                               <option> Maroc: trek au Sahara &#x2605; </option>
+                               <option> Japon : visites à Tokyo &#x2605; </option>
+                               <option> Londres </option>
+                               <option> Descente du Nil </option>
+                               <option > Grèce </option>
+                               <option> New York </option>
+                               <option> Madrid </option>  
+                               <option> Corse </option> 
+                          </select>
+                    </form>
+                </div>
+            </p>
+             
+            <p id="dates">  
+                Dates de votre séjour 
+            </p>
+        
+            <p>
+                <label for="arrivée"> du </label><input type="date" id="start" name="trip-start" value="DOMString"> 
+                <label for="arrivée"> au </label><input type="date" id="start" name="trip-start" value="DOMString">
+            </p>     
+               
+            <p id="passengers">
+                <label class="passagers" for="name">Nombre de passagers</label><br><br><br>
+                <input type="number" name="nom" id="name" placeholder="Nombre de passagers" min="1" max="10" />
+            </p>  
+              
+
+</section1> 
+
+                          <!--(Comment envoyer le texte saisi par le visiteur ? une fois les données envoyées, souhaitez-vous recevoir 
+                               le message automatiquement par mail ou préférez-vous qu'un programme se charge de l'enregistrer quelque part, 
+                                puis de l'afficher sur une page visible par tout le monde ?)
+
+                               ----------ajouter deux attributs à la balise <form>  :
+
+                          *method  : indique par quel moyen les données vont être envoyées:
+                           method="get"  : limitée à 255 caractères. La particularité:informations envoyées dans l'adresse de la page ( http://…  ).
+
+                           method="post"  : la plus utilisée car elle permet d'envoyer un grand nombre d'informations. Les données saisies dans le 
+                                            formulaire ne transitent pas par la barre d'adresse ;
+
+                          *action  : c'est l'adresse de la page ou du programme qui va traiter les informations. Cette page se chargera d' envoyer
+                            un e-mail avec le message si souhaité, ou bien d'enregistrer le message avec tous les autres dans une base de données.
+                              Cela ne peut pas se faire en HTML et CSS ; on utilisera en général un autre langage: PHP.-->
+
+
+
+<section2> 
+                    <!--ici plan des places assises-->
+           <h3 id="margin_bott">Choisissez votre numéro de cabine</h3>
+        <br>    
+            <div id="plan">
+    <!--Sélectionner plusieurs options en appuyant sur CTRL au moment du clic. -->
+                           <img src="images-agence-de-voyage/plan_cabine.png">  
+                                   <form id="siege"> 
+                                       <p id="places">Places disponibles</p>
+                                       <select multiple name="nom" size="6">
+                                           <option> A5 </option>
+                                           <option> A6 </option>
+                                           <option> A7 </option>
+                                           <option> A8 </option>
+                                           <option> B5 </option>
+                                           <option> B6 </option>
+                                           <option> B7 </option>
+                                           <option> B8 </option>
+                                           <option> C5 </option>
+                                           <option> C6 </option>
+                                           <option> C7 </option>
+                                           <option> C8 </option> 
+                                       </select>
+                                   </form>
+            </div>     
+</section2>  
+                   
+                         <!--ici commence la section3-->
+
+<section3>   
+    <h3 id="infoperso">Vos informations personnelles</h3> 
+        <div id="taille_s3"> 
+            <form method="post" action="traitement.php">
+                   
+                <div id="nomprenom">   
+                       <label for="name">Nom*</label> : <input type="text" name="nom" id="name" placeholder="Nom de famille"/>
+                         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                       <label for="name">Prénom*</label> : <input type="text" name="nom" id="name" placeholder="Prénom"/>
+                </div>       
+               <br>
+    <p id="verif">Veuillez vous assurer que vous remplissez le nom qui figure dans votre passeport.</p>
+               <br>
+                <div id="phonemail">
+                      <label for="phone">Numéro de téléphone* : </label><input type="tel" id="phone" name="phone"  placeholder="Téléphone">
+                      <label for="email">Adresse e-mail* : </label><input type="email" id="email" name="email" placeholder="Adresse e-mail"> 
+                </div>
+               <br>         
+
+                        <!--choix oui/non: utiliser "checkbox" -- placer label dessous input pour cibler -- puis référer for  à id-->
+                <div id="ouinon">
+                                <p>Voyagez-vous pour motif professionnel?</p>
+                    <div id="oui">
+                                <input type="checkbox" name="prof_oui" id="profel_oui">
+                                <label for="profel_oui">Oui</label>
+                    </div>
+                    <div id="non">
+                                <input type="checkbox" name="prof_non" id="profel_non">
+                                <label for="profel_non">Non</label>
+                    </div>
+                </div>  
+                <p id="champs">* Champs obligatoires</p> 
+            </form>
+        </div>
+</section3>             
+
+
+                        <!--ici commence la section4-->
+
+
+<section4> 
+               <div id="recevoir_offres">                 
+                        <!--cocher une case utiliser checkbox--> 
+                    <label for="recevoir_des_e_offres">
+                    <input type="checkbox" id="recevoir_des_e_offres" name="recevoir_des_e_offres">
+                               Je souhaite recevoir des offres et informations personnalisées de la 
+                               part d'Ailleurs.<br> Je peux me désabonner à tout moment de tout ou partie
+                               de ces communications.
+                    </label>
+                </div>  
+</section4>
+
+
+                        <!--ici commence la section5-->    
+
+<section5>
+            <div>
+
+                <ul id="s5">       
+                  <li>Nous utiliserons les informations ci-dessus pour vous envoyer votre billet et les informations relatives à votre vol.</li>
+                      Lorsque vous contactez notre service client, votre appel peut être enregistré afin de nous aider à améliorer notre<br>
+                      service.
+                  
+                  <li>Si vous ne souhaitez pas que votre conversation soit enregistrée, veuillez en informer le conseiller au début de</li>
+                    votre échange.
+                  <li>Si vous ne souhaitez pas apparaître sur une liste de démarchage téléphonique, vous pouvez vous inscrire sur la liste<br>
+                  d’opposition au démarchage téléphonique (Bloctel website).</li>       
+                </ul> 
+
+                  <p id="buttok">
+                      <button>
+                        J'ai compris
+                      </button> 
+                  </p>
+
+            </div>
+
+
+    </form>
+        <div>
+              <div id="secu">
+                           <p id="regler">
+                                          Paiement sécurisé
+                           </p>
+                        <div id="moyen_paiement">                           
+                                             Moyen de paiement
+                        </div>
+                    <article id="les_cb">
+                        <div id="cb1">                     
+                                      <button>
+                                      <img src="images-agence-de-voyage/logo-cb.jpg">
+                                      </button>
+                        </div> 
+                        <div id="cb2"> 
+                                      <button>
+                                      <img src="images-agence-de-voyage/logo-cb.png">
+                                      </button> 
+                        </div>   
+                        <div id="cb3"> 
+                                      <button>
+                                      <img src="images-agence-de-voyage/logo-mastercard.png">
+                                      </button>
+                        </div>
+                    </article>    
+             </div>
+                              <!--rendre obligatoire: "required"-->
+                              <!--obliger inserer uniquement des chiffres: pattern="[0-9]"-->
+                   <p id="codesecu">  
+                       <label for="code"> Code d'identification </label> 
+                       <input type="password" name="pass" id="code" maxlength="3" required pattern="[0-9]{3}"  placeholder="###" / >
+                       <button class="butt_valide">&emsp; Je valide &emsp;</button>
+                   </p>
+                      <legende class="consignes"> 
+                           Le code de sécurité à 3 chiffres est indiqué au verso de votre carte bancaire
+                      </legende>                 
+        </div>    
+    </form>
+                              <!--Validation par sms possible uniquement en javascript??-->
+    <form>
+            <div id="identifiantcb">
+                  <p id="cb">
+                       <label for="pass"> Identifiant de carte </label> 
+                       <input type="password" name="pass" id="pass" maxlength="15" required pattern="[0-9]{15}" placeholder="###############" / >
+                       <button class="butt_valide">&emsp; Je valide &emsp;</button>
+                   </p>
+                   <legende class="consignes"> 
+                               Composez ici votre code confidentiel à 15 chiffres.
+                   </legende>
+            </div>             
+    </form>      
+    
+            <div id="payer">
+                <button id="valides4">&emsp; Paiement du séjour &emsp;</button>
+            </div>
+
+</section5>   
+                    
+                <!--Ici commence la section6-->
+                <!--"textarea" après "label" puiq "rows"(nb de lignes ) "wrap"(retour à la ligne 
+                et "hard"pour que le navigateur s'en charge automaiquement) et wrap sui de "cols"
+            (largeur visible du contrôle de saisie, exprimée en largeur moyenne de caractères.)-->
+
+<section6> 
+            <div id="commentaires">
+                  <label for="comments">
+                      <p>Commentaires</p>
+                  </label>
+                  <textarea id="comments" name="comments" rows="5" maxlength="60" wrap="hard" cols="80" >
+                  </textarea>
+            </div>  
+
+            <button id="retour">
+                <div><a href="page-promo.html">Retour à l'accueil</a></div>
+            </button>   
+
+</section6>
+
+    <hr>
+
+                
+</body>
+
+
+<footer>
+         <div id="footer_confidentiel">
+              <h4>Sécurité et confidentialité</h4><br>
+                  <p>Nous mettons tout en œuvre pour garantir la sécurité <br> et la confidentialité de 
+                      vos données personnelles.</p>
+                     <br>
+                  <p><a id="pltq" href="#">Politique de confidentialité d'Ailleurs</a> </p>     
+         </div>
+</footer>
+
+
+</html>
